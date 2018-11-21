@@ -1,0 +1,126 @@
+{
+  "Common": {
+    "FileAccessed": {
+      "Type": "String",
+      "Description": "User or system account accesses a file on a SharePoint or OneDrive for Business site. System accounts can also generate FileAccessed events."
+    },
+    "FileCopied": {
+
+    },
+    "FileDeleted": {
+
+    },
+    "FileDeletedFirstStageRecycleBin": {
+
+    },
+    "FileDeletedSecondStageRecycleBin": {
+
+    },
+    "FileDownloaded": {
+
+    },
+    "FileFetched": {
+
+    },
+    "FileModified": {
+
+    },
+    "FileMoved": {
+
+    },
+    "FilePreviewed": {
+
+    },
+    "FileRenamed": {
+
+    },
+    "FileRestored": {
+
+    },
+    "FileUploaded": {
+
+    },
+    "FileViewed": {
+
+    },
+    "FolderCopied": {
+
+    },
+    "FolderCreated": {
+
+    },
+    "FolderDeleted": {
+
+    },
+    "FolderDeletedFirstStageRecycleBin": {
+
+    },
+    "FolderDeletedSecondStageRecycleBin": {
+
+    },
+    "FolderModified": {
+
+    },
+    "FolderMoved": {
+
+    },
+    "FolderRenamed": {
+
+    },
+    "FolderRestored": {
+
+    }
+  },
+  "FileOperation": {
+    "SiteUrl": {
+      "Type": "string",
+      "Description": "The URL of the site where the file or folder accessed by the user is located."
+    },
+    "SourceRelativeUrl": {
+      "Type": "String",
+      "Description": "The URL of the folder that contains the file accessed by the user. The combination of the values for the SiteURL, SourceRelativeURL, and SourceFileName parameters is the same as the value for the ObjectID property, which is the full path name for the file accessed by the user."
+    },
+    "SourceFileName": {
+      "Type": "String",
+      "Description": "The name of the file or folder accessed by the user."
+    },
+    "SourceFileExtension": {
+      "Type": "String",
+      "Description": "The file extension of the file that was accessed by the user. This property is blank if the object that was accessed is a folder."
+    },
+    "DestinationRelativeUrl": {
+      "Type": "String",
+      "Description": "The URL of the destination folder where a file is copied or moved. The combination of the values for SiteURL, DestinationRelativeURL, and DestinationFileName parameters is the same as the value for the ObjectID property, which is the full path name for the file that was copied. This property is displayed only for FileCopied and FileMoved events."
+    },
+    "DestinationFileName": {
+      "Type": "String",
+      "Description": "The name of the file that is copied or moved. This property is displayed only for FileCopied and FileMoved events."
+    },
+    "DestinationFileExtension": {
+      "Type": "String",
+      "Description": "\"The file extension of a file that is copied or moved. This property is displayed only for FileCopied and FileMoved events."
+    },
+    "UserSharedWith": {
+      "Type": "String",
+      "Description": "\"The user that a resource was shared with."
+    },
+    "SharingType": {
+      "Type": "String",
+      "Description": "The type of sharing permissions that were assigned to the user that the resource was shared with. This user is identified by the UserSharedWith parameter."
+    }
+  },
+  "Sharing": {
+    "TargetUserOrGroupName": {
+      "Type": "String",
+      "Description": "Stores the UPN or name of the target user or group that a resource was shared with."
+    },
+    "TargetUserOrGroupType": {
+      "Type": "String",
+      "Description": "Identifies whether the target user or group is a Member, Guest, Group, or Partner."
+    },
+    "EventData": {
+      "Type": "String",
+      "Description": "Conveys follow-up information about the sharing action that has occurred, such as adding a user to a group or granting edit permissions."
+    }
+  }
+}
